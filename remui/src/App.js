@@ -2,6 +2,7 @@ import { Button, Container } from '@mui/material';
 import { ThemeProvider } from "@mui/system";
 import { useEffect } from 'react';
 import theme from "./styles/theme"
+import Appbar from "./components/appbar"
 
 function App() {
   useEffect(() => {
@@ -15,9 +16,10 @@ function App() {
               background: '#fff'
             }}
           >
+          <Appbar/>
           {
             /*
-            Appbar
+            
             Banner
             Promotions
             Title
